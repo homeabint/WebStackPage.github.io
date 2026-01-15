@@ -42,18 +42,24 @@
         .card img {
             width: 100%;
             height: 200px;
-            object-fit: cover; /* 保证图片比例不失真 */
+            object-fit: cover; 
+            display: block; /* 防止图片底部有缝隙 */
         }
         .card-content {
             padding: 15px;
         }
-        .card-content h3 {
-            margin: 0 0 10px 0;
-            font-size: 1.2rem;
+        /* 让标题链接看起来更好看 */
+        .card-content h3 a {
+            text-decoration: none;
+            color: #333;
+        }
+        .card-content h3 a:hover {
+            color: #007bff;
         }
         .card-content p {
             color: #666;
             font-size: 0.9rem;
+            line-height: 1.5;
         }
     </style>
 </head>
@@ -62,17 +68,15 @@
 <header>
     <h1>大流量卡</h1>
 </header>
-<a href="https://ym.kashijiehaoka.cn/?s=fphsL5K6411798">
-    <img src="img/1.png" alt="中国移动">
-</a>
 
 <div class="gallery">
     <div class="card">
-        
+        <a href="https://ym.kashijiehaoka.cn/?s=fphsL5K6411798">
+            <img src="img/1.png" alt="中国移动">
+        </a>
         <div class="card-content">
-            <h3><a href="https://ym.kashijiehaoka.cn/?s=fphsL5K6411798">点击查看中国电信大流量卡</a><h3>
-
-            <p>话费高、流量告急？别慌！来我的店铺，5G 大流量卡任你挑。免费办理超省心，19 元、29 元就能拿下百 G 流量套餐，还包邮到家，轻松实现流量自由。</p>
+            <h3><a href="https://ym.kashijiehaoka.cn/?s=fphsL5K6411798">点击查看中国电信大流量卡</a></h3>
+            <p>话费高、流量告急？别慌！来我的店铺，5G 大流量卡任你挑。免费办理超省心，19 元、29 元就能拿下百 G 流量套餐。</p>
         </div>
     </div>
 
@@ -83,8 +87,7 @@
             <p>点击这里替换你自己的图片链接。</p>
         </div>
     </div>
-
-    </div>
+</div>
 
 </body>
 </html>
